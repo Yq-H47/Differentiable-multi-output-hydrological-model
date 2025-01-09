@@ -2,28 +2,31 @@
 This project provides a hybrid hydrological model that can output intermediate hydrological variables to provide a basis for studying the similarity of hydrological behavior in catchments. It provides tools for data processing, model training, testing and analysis of hydrological outputs with physical constraints.
 ## Project Structure
 ### Core Scripts
-1.JOH_Regional_dPL_output_physics.py
-  Purpose: Evaluates the hydrological model's output, considering physical constraints.
-  oKey Functionality: Produces detailed model outputs for analysis.
-2.JOH_Regional_dPL_test_all_change_met+attrs.py
-  Purpose: The model was tested using 5 meteorological and 27 attribute data.
-  Key Functionality: Validates model performance across diverse catchments.
-3.JOH_Regional_dPL_train_all_change_met+attrs.py
-  Purpose: Trains the model with meteorological and basin attribute data.
-  Key Functionality: Optimizes model parameters using provided datasets.
-4.dPL_class.py
-  Purpose: Defines the architecture and components of the differentiable hydrological model.
-  Key Functionality: Encapsulates model layers, forward propagation, and parameter tuning logic.
-5.dataprocess.py
-  Purpose: Processes raw hydrological and meteorological datasets for training and testing.
-  Key Functionality: Ensures data normalization, feature extraction, and input formatting.
-6.loss.py
-  Purpose: Implements custom loss functions for model optimization.
-  Key Functionality: Supports physics-informed loss terms to enhance prediction accuracy.
+1.JOH_Regional_dPL_output_physics.py  
+
+  Purpose: Evaluates the hydrological model's output, considering physical constraints.  
+  
+  oKey Functionality: Produces detailed model outputs for analysis.  
+  
+2.JOH_Regional_dPL_test_all_change_met+attrs.py  
+  Purpose: The model was tested using 5 meteorological and 27 attribute data.  
+  Key Functionality: Validates model performance across diverse catchments.  
+3.JOH_Regional_dPL_train_all_change_met+attrs.py  
+  Purpose: Trains the model with meteorological and basin attribute data.  
+  Key Functionality: Optimizes model parameters using provided datasets.  
+4.dPL_class.py  
+  Purpose: Defines the architecture and components of the differentiable hydrological model.  
+  Key Functionality: Encapsulates model layers, forward propagation, and parameter tuning logic.  
+5.dataprocess.py  
+  Purpose: Processes raw hydrological and meteorological datasets for training and testing.  
+  Key Functionality: Ensures data normalization, feature extraction, and input formatting.  
+6.loss.py  
+  Purpose: Implements custom loss functions for model optimization.  
+  Key Functionality: Supports physics-informed loss terms to enhance prediction accuracy.  
 ## Installation and Setup
 ### Prerequisites
-  Python: Version 3.8 or later.
-  Recommended packages: numpy, pandas, torch, matplotlib, and scipy.
+  Python: Version 3.8 or later.  
+  Recommended packages: numpy, pandas, torch, matplotlib, and scipy.  
 ### Setup Steps
 1.Clone the repository:
   git clone https://github.com/Yq-H47/Differentiable-multi-output-hydrological-model
